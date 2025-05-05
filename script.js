@@ -47,16 +47,12 @@ buttons.forEach((button, index) => {
       else if (index === 8){displaying.textContent = "8";}
       else if (index === 9){displaying.textContent = "9";}
       else if (index === 10){displaying.textContent = ".";}
-      //else if (index === 11){displaying.textContent = "=";}
+     
       else if (index === 12){displaying.textContent = "+";}
       else if (index === 13){displaying.textContent = "-";}
       else if (index === 14){displaying.textContent = "x";}
       else if (index === 15){displaying.textContent = "/";}
-      /*else if (index === 16){displaying.textContent = ""; 
-        num1 = ""; 
-        num2 =""; 
-        operator =""; 
-        count = 0;}*/
+    
       count += 1;
     }
     
@@ -66,8 +62,6 @@ buttons.forEach((button, index) => {
     else if (count === 3){num2 = parseInt(displaying.textContent)}
 
     result = operate(num1, operator, num2);
-    
-    
     
     })
   })
