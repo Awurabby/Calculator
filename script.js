@@ -1,7 +1,6 @@
 let num1;
 let operator;
 let num2;
-let count = 0;
 let result;
 
 let displaying = document.querySelector(".screen");
