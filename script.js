@@ -37,9 +37,9 @@ buttons.forEach((button) => {
 
   if (!isNaN(value) || (value ===".")){displaying.textContent += value
 
-    if (currentStatus === "num1"){num1 = parseInt(displaying.textContent)}
+    if (currentStatus === "num1"){num1 = parseFloat(displaying.textContent)}
     else if (currentStatus === "num2"){
-      num2 = parseInt(displaying.textContent)
+      num2 = parseFloat(displaying.textContent)
     }
   }
   else if (["+", "-", "X", "/"].includes(value)){
@@ -50,7 +50,7 @@ buttons.forEach((button) => {
 }
 )})
 equals.addEventListener("click", ()=> {
-  let result = operate(num1, operator, num2);
+  let result = parseFloat((operate(num1, operator, num2)).toFixed(7));
   displaying.textContent = result;
   num1 = result;
   operator ="";
